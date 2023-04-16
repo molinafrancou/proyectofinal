@@ -4,7 +4,7 @@ body {
 }
 
 .logo {
-    display: block;
+    display: flex;
     margin-right: auto;
     margin-left: auto;
     margin-top: auto;
