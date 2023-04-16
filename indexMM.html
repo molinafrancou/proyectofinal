@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MM</title>
+    <link rel="stylesheet" href="estilosMM.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+
+        $(".caja").on({
+            mouseenter: function(){
+                $(this).css("background-color", "rgb(11, 1, 48)");
+            },
+            mouseleave: function(){
+                $(this).css("background-color", "rgb(27, 0, 124)");
+            }
+        });
+
+    })
+    </script>   
+
+    <div class="contenedor">
+        <a class="caja c1" href="indexMM.html">Empresa</a>
+        <a class="caja c2" href="productos.html">Productos</a>
+        <a class="caja c3" href="servicios.html">Servicios</a>
+        <a class="caja c4">Contacto</a>
+    </div>
+
+    <img src="logo.png" class="logo">
+</head>
+<body>
+    <div class="contenedor2">
+        <img id="slider" src="" alt="" class="caja2 c1a">
+        <div class="caja2 c2a">
+            <h1>Nuestra MISION</h1>
+            <p>Proporcionar soluciones tecnológicas innovadoras y de alta calidad que satisfagan las necesidades de nuestros clientes, mejorando su productividad, competitividad y rentabilidad, a través de un equipo altamente capacitado y comprometido con la excelencia y la satisfacción del cliente.</p>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener('load',function() {
+
+            const slider = document.getElementById("slider");
+            const imagenes = ["local1.jpg","local2.jpg","local3.jpg"];
+            let index = 0;
+            
+            const cambiarImagenes = function() {
+                var camino = 'fotos_empresa/'+imagenes[index];
+                slider.src = camino;
+                var fin = imagenes.length-1;
+                if (index < fin) {
+                    index++;
+                }
+                else {
+                    index=0;
+                }
+            }
+            cambiarImagenes();
+            setInterval(cambiarImagenes,3000);
+        
+        })
+    </script>
+</body>
+</html>
