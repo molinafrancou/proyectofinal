@@ -24,28 +24,9 @@ a:link, a:visited {
     color: white;
 }
 
-.c1 {
+.c {
     order:1;
     background-color: rgb(4, 4, 155);
-    height: 30px;
-    justify-content: center;
-}
-
-.c2 {
-    order:2;
-    background-color:  rgb(4, 4, 155);
-    height: 30px;
-    justify-content: center;
-}
-.c3 {
-    order:3;
-    background-color:  rgb(4, 4, 155);
-    height: 30px;
-    justify-content: center;
-}
-.c4 {
-    order:4;
-    background-color:  rgb(4, 4, 155);
     height: 30px;
     justify-content: center;
 }
@@ -73,11 +54,6 @@ a:link, a:visited {
     padding: 50px;
 }
 
-.form-horizontal{
+.form {
     background-color: black;
-}
-
-.form-group {
-    align-items: center;
-    justify-content: center;
 }
