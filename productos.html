@@ -7,32 +7,64 @@
     <title>MM</title>
     <link rel="stylesheet" href="estilosMM.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script>
-    $(document).ready(function(){
-
-        $(".caja").on({
-            mouseenter: function(){
-                $(this).css("background-color", "rgb(11, 1, 48)");
-            },
-            mouseleave: function(){
-                $(this).css("background-color", "rgb(27, 0, 124)");
-            }
-        });
-
-    })
-    </script> 
-    <div class="contenedor">
-        <a class="caja c1" href="indexMM.html">Empresa</a>
-        <a class="caja c2" href="productos.html">Productos</a>
-        <a class="caja c3" href="servicios.html">Servicios</a>
-        <a class="caja c4" href="contacto.html">Contacto</a>
-    </div>  
-    <img src="logo.png" class="logo">
+    
+        $(document).ready(function(){
+    
+            $(".c1").on({
+                mouseenter: function(){
+                    $(this).css("background-color", "rgb(11, 1, 48)");
+                },
+                mouseleave: function(){
+                    $(this).css("background-color", "rgb(4, 4, 155)");
+                }
+            });
+            $(".c2").on({
+                mouseenter: function(){
+                    $(this).css("background-color", "rgb(11, 1, 48)");
+                },
+                mouseleave: function(){
+                    $(this).css("background-color", "rgb(4, 4, 155)");
+                }
+            });
+            $(".c3").on({
+                mouseenter: function(){
+                    $(this).css("background-color", "rgb(11, 1, 48)");
+                },
+                mouseleave: function(){
+                    $(this).css("background-color", "rgb(4, 4, 155)");
+                }
+            });
+            $(".c4").on({
+                mouseenter: function(){
+                    $(this).css("background-color", "rgb(11, 1, 48)");
+                },
+                mouseleave: function(){
+                    $(this).css("background-color", "rgb(4, 4, 155)");
+                }
+            });
+    
+        })
+        </script>   
+        <div class="container-fluid">
+            <div class="row">
+                <a class="col c1" href="indexMM.html">Empresa</a>
+                <a class="col c2" href="productos.html">Productos</a>
+                <a class="col c3" href="servicios.html">Servicios</a>
+                <a class="col c4" href="contacto.html">Contacto</a>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <img src="logo.png" class="logo">
+        </div>
 </head>
 <body>
-    <div class="contenedor2">
-        <img src="fotos_productos/cartuchos.jpg" class="caja2 c1a">
-        <div class="caja2 c2a">
+    <div class="container-fluid">
+        <div class="row">
+            <img src="fotos_productos/cartuchos.jpg" alt="" class="col c1a">
+            <div class="col c2a">
             <h1>Insumos de impresoras</h1>
             <li>Cartuchos de tinta: utilizados en impresoras de inyección de tinta.</li>
             <li>Tóners: utilizados en impresoras láser.</li>
@@ -41,34 +73,40 @@
             <li>Rodillos: utilizados en impresoras láser para transportar el papel.</li>
             <li>Cintas de impresora: utilizadas en impresoras matriciales.</li>
             <p>Es importante asegurarse de utilizar insumos de alta calidad y compatibles con la impresora para garantizar una impresión óptima y evitar daños en la impresora.</p>
+            </div>
+        </div>
+    </div> 
+    
+    <div class="container-fluid">
+        <div class="row">
+            <img src="fotos_productos/accesorios_pc.jpg" alt="" class="col c1a">
+            <div class="col c2a">
+                <h1>Accesorios y Equipos</h1>
+                <li>Dispositivos de entrada que permiten al usuario controlar el movimiento del cursor en la pantalla</li>
+                <li>Monitores: dispositivos de salida que muestran la información de la computadora en la pantalla.</li>
+                <li>Auriculares: dispositivos de salida que permiten al usuario escuchar el sonido sin que lo oiga el resto de las personas.</li>
+                <li>Cámaras web: dispositivos de entrada que permiten al usuario capturar imágenes y vídeo para su uso en videoconferencias o streaming.</li>
+                <li>Adaptadores de red: dispositivos que permiten a la computadora conectarse a una red.</li>
+                <li>Unidades de almacenamiento externas: dispositivos que permiten al usuario almacenar información fuera de la computadora, como discos duros externos, unidades flash USB y tarjetas de memoria.</li>
+            </div>
         </div>
     </div>
-    <div class="contenedor2">
-        <div class="caja2 c2a">
-            <h1>Accesorios y Equipos</h1>
-            <li>Dispositivos de entrada que permiten al usuario controlar el movimiento del cursor en la pantalla.
-            Teclados: dispositivos de entrada que permiten al usuario introducir texto y comandos en la computadora.</li>
-            <li>Monitores: dispositivos de salida que muestran la información de la computadora en la pantalla.</li>
-            <li>Altavoces: dispositivos de salida que permiten escuchar el sonido producido por la computadora.</li>
-            <li>Auriculares: dispositivos de salida que permiten al usuario escuchar el sonido sin que lo oiga el resto de las personas.</li>
-            <li>Cámaras web: dispositivos de entrada que permiten al usuario capturar imágenes y vídeo para su uso en videoconferencias o streaming.</li>
-            <li>Adaptadores de red: dispositivos que permiten a la computadora conectarse a una red.</li>
-            <li>Unidades de almacenamiento externas: dispositivos que permiten al usuario almacenar información fuera de la computadora, como discos duros externos, unidades flash USB y tarjetas de memoria.</li>
-        </div>
-        <img src="fotos_productos/accesorios_pc.jpg" class="caja2 c1a">
-    </div>
-    <div class="contenedor2">
-        <div class="caja2 c2a">
-            <h1>Accesorios para celulares</h1>
-            <li>Fundas y protectores de pantalla: utilizados para proteger el teléfono contra rasguños, roturas y caídas.</li>
-            <li>Baterías externas: dispositivos portátiles que se utilizan para cargar la batería del teléfono cuando no se tiene acceso a una fuente de energía.</li>
-            <li>Cargadores: dispositivos que se utilizan para cargar la batería del teléfono.</li>
-            <li>Auriculares y manos libres: dispositivos de salida que permiten al usuario escuchar el sonido producido por el teléfono y hablar sin sostener el teléfono en la mano.</li>
-            <li>Tarjetas de memoria: dispositivos de almacenamiento externo que se utilizan para aumentar la capacidad de almacenamiento del teléfono.</li>
-            <li>Soportes para teléfonos: dispositivos que se utilizan para sostener el teléfono en una posición específica para facilitar la visualización de contenido.</li>
-        </div>
-        <img src="fotos_productos/accesorios_cel.jpg" class="caja2 c1a">
 
+    <div class="container-fluid">
+        <div class="row">
+                <img src="fotos_productos/accesorios_cel.jpg" alt="" class="col c1a">
+                <div class="col c2a">
+                    <h1>Accesorios para celulares</h1>
+                    <li>Fundas y protectores de pantalla: utilizados para proteger el teléfono contra rasguños, roturas y caídas.</li>
+                    <li>Baterías externas: dispositivos portátiles que se utilizan para cargar la batería del teléfono cuando no se tiene acceso a una fuente de energía.</li>
+                    <li>Cargadores: dispositivos que se utilizan para cargar la batería del teléfono.</li>
+                    <li>Auriculares y manos libres: dispositivos de salida que permiten al usuario escuchar el sonido producido por el teléfono y hablar sin sostener el teléfono en la mano.</li>
+                    <li>Tarjetas de memoria: dispositivos de almacenamiento externo que se utilizan para aumentar la capacidad de almacenamiento del teléfono.</li>
+                    <li>Soportes para teléfonos: dispositivos que se utilizan para sostener el teléfono en una posición específica para facilitar la visualización de contenido.</li>
+                </div>
+        </div>    
+    </div>
+            
     
 
 </body>
