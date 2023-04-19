@@ -3,6 +3,11 @@ body {
     margin: 0px;
 }
 
+#resultado {
+    color: black;
+}
+
+
 a:link, a:visited {
     text-decoration: none;
   }
