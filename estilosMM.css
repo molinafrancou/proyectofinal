@@ -25,15 +25,26 @@ a:link, a:visited {
 }
 
 .c {
-    order:1;
     background-color: rgb(4, 4, 155);
     height: 30px;
     justify-content: center;
+    color: white;
+}
+
+.separacion {
+    height: 30px;
+    background-color: white;
+}
+
+.separacion2 {
+    height: 30px;
+    background-color: black;
+    margin: 0px;
 }
 
 .slider {
     background-color: black;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 .c1a {
@@ -41,17 +52,17 @@ a:link, a:visited {
     height: 500px;
     order: 1;
     background-color: black;
-    padding: 50px;
+    
 }
 
 .c2a {
     order: 2;
     background-color: black;
     color: blanchedalmond;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-size: large;
     text-align: left;
-    padding: 50px;
+   
 }
 
 .form {
